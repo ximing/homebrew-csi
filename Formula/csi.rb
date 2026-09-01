@@ -1,6 +1,6 @@
 # Homebrew formula for csi，由 .github/workflows/release.yml 的 tap job 渲染并推送到
-# ximing/homebrew-csi。占位符：0.6.0 / 5f84570f9ffbc0bb2e5aa5452771b0759488f7f5b1e675019fe4ee31c64150cb / a1b14ba12fd95d8f35c6cb451fadcf7a58822c00f7777b9a01038e8017a9bcb1 /
-# 85a630b2415ff18c4167cc4a5149d46d19fcf375e9a7c73dd67fb3c2b6b53010 / 5a2395f31b0f97860f49326cc1b73369ae7bc25c8a7f567cd27977995ed11f27。手工改动请改本文件，不要直接改 tap 仓库。
+# ximing/homebrew-csi。占位符：0.7.0 / e3459e0fb5881f38419bc5240294ea58adb049b43fd12773c6289600288bf2ab / c3b2656796d1ce28e500ae6408b184b61435ccae96cfffd4e0a4d57e3863795b /
+# c84a515fa5b0f014b255c634ef8d1237e910af909f470545013039b9ca9aed71 / 9dc8fbe99e4a8f835fff74804254db18ab0d502f801055ad70e265ca2e651f1b。手工改动请改本文件，不要直接改 tap 仓库。
 #
 # 注意：这是个人 tap 的二进制 formula（直接装 Release 预编译包，不走源码构建）。
 # 将来若向 homebrew-core 投稿，需另写源码构建版本（见 docs/superpowers/specs/
@@ -11,27 +11,27 @@
 class Csi < Formula
   desc "Let AI control your real Chrome browser via a local daemon"
   homepage "https://github.com/ximing/csi"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ximing/csi/releases/download/v0.6.0/csi-darwin-arm64.tar.gz"
-      sha256 "5f84570f9ffbc0bb2e5aa5452771b0759488f7f5b1e675019fe4ee31c64150cb"
+      url "https://github.com/ximing/csi/releases/download/v0.7.0/csi-darwin-arm64.tar.gz"
+      sha256 "e3459e0fb5881f38419bc5240294ea58adb049b43fd12773c6289600288bf2ab"
     end
     on_intel do
-      url "https://github.com/ximing/csi/releases/download/v0.6.0/csi-darwin-amd64.tar.gz"
-      sha256 "a1b14ba12fd95d8f35c6cb451fadcf7a58822c00f7777b9a01038e8017a9bcb1"
+      url "https://github.com/ximing/csi/releases/download/v0.7.0/csi-darwin-amd64.tar.gz"
+      sha256 "c3b2656796d1ce28e500ae6408b184b61435ccae96cfffd4e0a4d57e3863795b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ximing/csi/releases/download/v0.6.0/csi-linux-arm64.tar.gz"
-      sha256 "85a630b2415ff18c4167cc4a5149d46d19fcf375e9a7c73dd67fb3c2b6b53010"
+      url "https://github.com/ximing/csi/releases/download/v0.7.0/csi-linux-arm64.tar.gz"
+      sha256 "c84a515fa5b0f014b255c634ef8d1237e910af909f470545013039b9ca9aed71"
     end
     on_intel do
-      url "https://github.com/ximing/csi/releases/download/v0.6.0/csi-linux-amd64.tar.gz"
-      sha256 "5a2395f31b0f97860f49326cc1b73369ae7bc25c8a7f567cd27977995ed11f27"
+      url "https://github.com/ximing/csi/releases/download/v0.7.0/csi-linux-amd64.tar.gz"
+      sha256 "9dc8fbe99e4a8f835fff74804254db18ab0d502f801055ad70e265ca2e651f1b"
     end
   end
 
